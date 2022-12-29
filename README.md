@@ -1,2 +1,2 @@
-# Restaurant-Page-
+# Restaurant-Page
 This is a "TOP" Project
