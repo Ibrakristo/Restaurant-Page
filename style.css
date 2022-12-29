@@ -6,8 +6,11 @@ html,
 body {
   margin: 0px;
   font-family: lato;
+  height: 100vh;
 }
-
+#content{
+  height: 100%;
+}
 .header {
   background-color: #faf8f1;
   display: grid;
@@ -34,6 +37,7 @@ body {
 
 .photo-container img {
   flex: 1;
+  min-width: 0px;
 }
 .title-img {
   color: white;
@@ -108,4 +112,57 @@ body {
     
     font-size: 12px;
     align-self: flex-end;
+}
+
+.menu-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAEAB178;
+  padding: 35px;
+}
+.menu-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  width: 40vw;
+}
+.menu-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.menu-inner img{
+  width: 200px;
+}
+
+.contact-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #E5BA7388;
+  gap: 50px;
+  flex:1 1 auto;
+
+}
+.contact-card{
+  display: flex;
+  flex: 1 1 auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-card img{
+  width: 200px;
+}
+.contact-card p{
+  max-width: 200px;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
