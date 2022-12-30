@@ -28,7 +28,7 @@ export default function menu() {
     let photoContainer = document.createElement("div");
     photoContainer.classList.add("photo-container");
     let titleImg = document.createElement("div");
-    titleImg.innerText = "This is a Cafe";
+    titleImg.innerText = "Menu";
     titleImg.classList.add("title-img");
     photoContainer.appendChild(titleImg);
     let img = document.createElement("img");

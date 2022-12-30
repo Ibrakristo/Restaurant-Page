@@ -29,7 +29,7 @@ export default function home() {
     let photoContainer = document.createElement("div");
     photoContainer.classList.add("photo-container");
     let titleImg = document.createElement("div");
-    titleImg.innerText = "This is a Cafe";
+    titleImg.innerText = "Eater";
     titleImg.classList.add("title-img");
     photoContainer.appendChild(titleImg);
     let img = document.createElement("img");
@@ -63,13 +63,7 @@ export default function home() {
     saying.classList.add("saying");
     let div = document.createElement("div");
     let p = document.createElement("p");
-    p.innerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-    commodo augue nulla, a dignissim eros tincidunt euismod. Aliquam
-    bibendum, mi id rhoncus ultricies, enim diam pretium eros, eu dictum
-    velit lorem in nibh. Cras non nisi placerat, finibus erat quis,
-    tincidunt magna. Curabitur id libero malesuada, elementum tortor et,
-    tempor lorem. Proin non massa ac eros vehicula vestibulum. Integer
-    elementum.`;
+    p.innerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo augue nulla, a dignissim eros tincidunt euismod. Aliquam bibendum, mi id rhoncus ultricies, enim diam pretium eros, eu dictum velit lorem in nibh. Cras non nisi placerat, finibus erat quis, tincidunt magna. Curabitur id libero malesuada, elementum tortor et, tempor lorem. Proin non massa ac eros vehicula vestibulum. Integer elementum.`;
     div.appendChild(p);
     let p2 = document.createElement("p");
     p2.innerText = "-a stranger maybe";
