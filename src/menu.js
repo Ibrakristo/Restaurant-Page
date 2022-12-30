@@ -1,29 +1,5 @@
 export default function menu() {
   let content = document.querySelector("#content");
-  function headerinit() {
-    let header = document.createElement("div");
-    header.classList.add("header");
-    let p = document.createElement("p");
-    p.innerText = "Welcome to Eater!";
-    header.appendChild(p);
-    let ul = document.createElement("ul");
-
-    for (let i = 0; i < 3; i++) {
-      let li = document.createElement("li");
-      let a = document.createElement("a");
-      let img = document.createElement("img");
-      a.setAttribute("href", "#");
-      if (i == 0) img.setAttribute("src", "./photo/icons/fb.svg");
-      else if (i == 1) img.setAttribute("src", "./photo/icons/tw.svg");
-      else img.setAttribute("src", "./photo/icons/ins.svg");
-      a.appendChild(img);
-      li.appendChild(a);
-      ul.appendChild(li);
-    }
-    header.appendChild(ul);
-    content.appendChild(header);
-  }
-  headerinit();
   function photoContainerinit() {
     let photoContainer = document.createElement("div");
     photoContainer.classList.add("photo-container");

@@ -8,11 +8,28 @@ body {
   font-family: lato;
   height: 100vh;
 }
+.header {
+  background-color: #faf8f1;
+  display: grid;
+  grid-template-columns: auto  1fr auto;
+  align-items: center;
+  padding: 0px 15px;
+}
+.header p {
+  font-size: 26px;
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.header img {
+  width: 20px;
+}
 .tabs{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #faf8f1;
   gap: 15px;
   padding: 15px;
 }
@@ -27,24 +44,6 @@ body {
 }
 #content{
   height: 100%;
-}
-.header {
-  background-color: #faf8f1;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  padding: 0px 15px;
-}
-.header p {
-  font-size: 26px;
-}
-.header ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-.header img {
-  width: 20px;
 }
 
 .photo-container {

@@ -1,30 +1,5 @@
-
 export default function home() {
   let content = document.querySelector("#content");
-  function headerinit() {
-    let header = document.createElement("div");
-    header.classList.add("header");
-    let p = document.createElement("p");
-    p.innerText = "Welcome to Eater!";
-    header.appendChild(p);
-    let ul = document.createElement("ul");
-
-    for (let i = 0; i < 3; i++) {
-      let li = document.createElement("li");
-      let a = document.createElement("a");
-      let img = document.createElement("img");
-      a.setAttribute("href", "#");
-      if (i == 0) img.setAttribute("src", "./photo/icons/fb.svg");
-      else if (i == 1) img.setAttribute("src", "./photo/icons/tw.svg");
-      else img.setAttribute("src", "./photo/icons/ins.svg");
-      a.appendChild(img);
-      li.appendChild(a);
-      ul.appendChild(li);
-    }
-    header.appendChild(ul);
-    content.appendChild(header);
-  }
-  headerinit();
   function photoContainerinit() {
     let photoContainer = document.createElement("div");
     photoContainer.classList.add("photo-container");
@@ -72,42 +47,42 @@ export default function home() {
     content.appendChild(saying);
   }
   sayinginit();
-  function infoinit(){
+  function infoinit() {
     let info = document.createElement("div");
     info.classList.add("info");
-    for(let i = 0 ; i<3;i++){
-        let div = document.createElement("div");
-        div.classList.add("icons-wrapper");
-        let img = document.createElement("img");
-        let p = document.createElement("p");
-        if(i==0){
-            img.setAttribute("src","./photo/icons/time.svg")
-            p.innerHTML = "Opens from 11 AM to 12PM <br> Sunday-Friday";
-        }
-        if(i==1){
-            img.setAttribute("src","./photo/icons/location.svg")
-            p.innerHTML = "Near <i>That Guy</i>";
-        }
-        if(i==2){
-            img.setAttribute("src","./photo/icons/star.svg")
-            p.innerHTML = "One of The Highest rated Restaurant in the country <i>*cause its the only thing in it :)*</i>";
-        }
-        div.appendChild(img);
-        div.appendChild(p);
-        info.appendChild(div);
-
+    for (let i = 0; i < 3; i++) {
+      let div = document.createElement("div");
+      div.classList.add("icons-wrapper");
+      let img = document.createElement("img");
+      let p = document.createElement("p");
+      if (i == 0) {
+        img.setAttribute("src", "./photo/icons/time.svg");
+        p.innerHTML = "Opens from 11 AM to 12PM <br> Sunday-Friday";
+      }
+      if (i == 1) {
+        img.setAttribute("src", "./photo/icons/location.svg");
+        p.innerHTML = "Near <i>That Guy</i>";
+      }
+      if (i == 2) {
+        img.setAttribute("src", "./photo/icons/star.svg");
+        p.innerHTML =
+          "One of The Highest rated Restaurant in the country <i>*cause its the only thing in it :)*</i>";
+      }
+      div.appendChild(img);
+      div.appendChild(p);
+      info.appendChild(div);
     }
     content.appendChild(info);
   }
   infoinit();
-  function footerinit(){
+  function footerinit() {
     let footer = document.createElement("div");
     footer.classList.add("footer");
     let p = document.createElement("p");
     p.innerText = "Eater Restaurant";
     footer.appendChild(p);
-    let p2 = document.createElement("p")
-    p2.innerText= "all credits goes to its respective owners";
+    let p2 = document.createElement("p");
+    p2.innerText = "all credits goes to its respective owners";
     footer.appendChild(p2);
     content.appendChild(footer);
   }
